@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/widgets/category_list_view.dart';
 import 'package:news_app/widgets/news_list_view.dart';
+import 'package:news_app/widgets/news_list_view_builder.dart';
 
 
 
@@ -48,7 +49,9 @@ class HomeView extends StatelessWidget {
                  height: 32,
               ),
             ),
-             NewsListView()
+             NewsListViewBuilder(
+              category: 'general',
+             )
           ],
          ),
        
@@ -56,4 +59,6 @@ class HomeView extends StatelessWidget {
     );
    
   }
+
+  
 }
